@@ -4,34 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog Front End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assests/css/styles.css">
 </head>
   <body>
-    <header>
-        <nav class="navbar bg-body-tertiary ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="assests/img/logos/adl.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Blog FrontEnd
-              </a>
-            </div>
-          </nav>
+    <header class="header">
+        <div class="header__container container">
+            <img class="header__container--imagen" src="assests/img/logos/adl.png" alt="Logo">
+            <H1 class="header__container--titulo1">Blog FrontEnd</H1>
+        </div>
     </header>
     <main>
-    <div class="container">
     <hr class="linea">
-    <h1>Novedades</h1>
+    <div class="nov__izquierda container">
+    <h1 class="nov__izquierda--titulo2">Novedades</h1>
         <div class="container text-left">
             <div class="row">
                 <div class="col-sm-8 col-xs-12">
                     <div class="etiqueta">
-                        <img class="img__card--bts" src="assests/img/posts/bootstrap.png" >
+                        <img class="nov__izquierda--img" src="assests/img/posts/bootstrap.png" >
                         <div class="body">
-                            <h6 class="card__title">24 de noviembre, 2022</h6>
-                            <p class="card__text--p">Modifica el tema de bootstrap con variables CSS</p>
-                           <img class="card__img--adl" src="assests/img/logos/adl.png" alt="">
-                            <span class="card__text--span">Desafía Latam</span> 
+                            <h6 class="nov__izquierda--title mt-4">24 de noviembre, 2022</h6>
+                            <p class="nov__izquierda--p">Modifica el tema de bootstrap con variables CSS</p>
+                           <img class="nov__izquierda--adl" src="assests/img/logos/adl.png" alt="">
+                            <span class="nov__izquierda--span">Desafía Latam</span> 
                         </div>
                     </div>
                 </div>
@@ -39,82 +38,85 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-xs-12">
-                                <div class="etiqueta--2">
-                                    <img class="img_card--posts" src="assests/img/posts/Herencia-JS.png" alt="">
+                                <div class="nov__derecha">
+                                    <img class="nov__derecha--img" src="assests/img/posts/Herencia-JS.png" alt="">
                                     <div class="body">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Herencia en JavaScript</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
+                                    <p class="nov__derecha--p">Herencia en JavaScript</p>
+                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="nov__derecha--span">Desafía Latam</span>
                                 </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-xs-12 mt-5">
-                                <div class="etiqueta--2">
-                                    <img class="img_card--posts" src="assests/img/posts/Etiquetas-semánticas-HTML.png" alt="">
+                                <div class="nov__derecha">
+                                    <img class="nov__derecha--img" src="assests/img/posts/Etiquetas-semánticas-HTML.png" alt="">
                                     <div class="body">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Herencia en JavaScript</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
+                                    <p class="nov__derecha--p">Etiquetas Semánticas</p>
+                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="nov__derecha--span">Desafía Latam</span>
                                 </div>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-xs-12 mt-5">
-                                <div class="etiqueta--2">
-                                    <img class="img_card--posts" src="assests/img/posts/reactComponents.png" alt="">
+                                <div class="nov__derecha">
+                                    <img class="nov__derecha--img" src="assests/img/posts/reactComponents.png" alt="">
                                     <div class="body">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Herencia en JavaScript</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/pngadl." alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
+                                    <p class="nov__derecha--p">Companentes React</p>
+                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="nov__derecha--span">Desafía Latam</span>
                                 </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="linea">
-            <div class="row">
+        
+            <hr class="linea mt-5">
+        
+            <div class="row mt-5">
                 <div class="col-sm-8">
                     <div class="container">
-                        <h1>Populares</h1>
+                        <h1 class="pop__cat--titulos">Populares</h1>
                         <div class="row">
                             <div class="col-sm-4 col-xs-12 mt-5 mx-5">
-                                <div class="etiqueta--3">
-                                    <img class="img__card--populares" src="assests/img/posts/vue-components.png" alt="">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Componentes VUE</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                <div class="pop__cat">
+                                    <img class="pop__cat--img" src="assests/img/posts/vue-components.png" alt="">
+                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
+                                    <p class="pop__cat--p">Componentes VUE</p>
+                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="pop__cat--span">Desafía Latam</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
+                                <div class="pop__cat">
+                                    <img class="pop__cat--img" src="assests/img/posts/api-js.png" alt="">
+                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
+                                    <p class="pop__cat--p">Componentes VUE</p>
+                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="pop__cat--span">Desafía Latam</span>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
                                 <div class="etiqueta--3">
-                                    <img class="img__card--populares" src="assests/img/posts/api-js.png" alt="">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Componentes VUE</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                    <img class="pop__cat--img" src="assests/img/posts/sass.jpg" alt="">
+                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
+                                    <p class="pop__cat--p">Componentes VUE</p>
+                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="pop__cat--span">Desafía Latam</span>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
-                                <div class="etiqueta--3">
-                                    <img class="img__card--populares" src="assests/img/posts/sass.jpg" alt="">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Componentes VUE</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
-                                <div class="etiqueta--3">
-                                    <img class="img__card--populares" src="assests/img/posts/bootstrap.png" alt="">
-                                    <h6 class="card__title">24 de noviembre, 2022</h6>
-                                    <p class="card__text--p">Componentes VUE</p>
-                                    <img class="card__img--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="card__text--span">Desafía Latam</span>
+                                <div class="pop__cat">
+                                    <img class="pop__cat--img" src="assests/img/posts/bootstrap.png" alt="">
+                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
+                                    <p class="pop__cat--p">Componentes VUE</p>
+                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
+                                    <span class="pop__cat--span">Desafía Latam</span>
                                 </div>
                             </div>
                         </div>
@@ -122,47 +124,49 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="container">
-                        <h1>Categorías</h1>
-                        <div class="row__1">
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color1">
-                                <img class="img__card--logos" src="assests/img/logos/html.png" alt="">
-                                <h1 class="texto__opciones">HTML</h1>
+                        <h1 class="pop__cat--titulos">Categorías</h1>
+                        <div class="mt-5">
+                            <div class="col-sm-4 col-xs-12 ">
+                                <div class="cat__pop--opciones color1">
+                                <img class="cat__pop--logos" src="assests/img/logos/html.png" alt="">
+                                <h1 class="cat__pop--text">HTML</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color2">
-                                <img class="img__card--logos" src="assests/img/logos/js.png" alt="">
-                                <h1 class="texto__opciones">Js</h1>
+                            <div class="col-sm-4 col-xs-12 mt-4">
+                                <div class="cat__pop--opciones color2">
+                                <img class="cat__pop--logos" src="assests/img/logos/js.png" alt="">
+                                <h1 class="cat__pop--text">JavaScript</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color3">
-                                <img class="img__card--logos" src="assests/img/logos/css.png" alt="">
-                                <h1 class="texto__opciones">Css</h1>
+                            <div class="col-sm-4 col-xs-12 mt-4">
+                                <div class="cat__pop--opciones color3">
+                                <img class="cat__pop--logos" src="assests/img/logos/css.png" alt="">
+                                <h1 class="cat__pop--text">Css</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color4">
-                                <img class="img__card--logos" src="assests/img/logos/react.png" alt="">
-                                <h1 class="texto__opciones">React</h1>
+                            <div class="col-sm-4 col-xs-12 mt-4">
+                                <div class="cat__pop--opciones color4">
+                                <img class="cat__pop--logos" src="assests/img/logos/react.png" alt="">
+                                <h1 class="cat__pop--text">React</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color5">
-                                <img class="img__card--logos" src="assests/img/logos/vue.png" alt="">
-                                <h1 class="texto__opciones">Vue</h1>
+                            <div class="col-sm-4 col-xs-12 mt-4">
+                                <div class="cat__pop--opciones color5">
+                                <img class="cat__pop--logos" src="assests/img/logos/vue.png" alt="">
+                                <h1 class="cat__pop--text">Vue</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12 opciones">
-                                <div class="logo__opciones color6">
-                                <img class="img__card--logos" src="assests/img/logos/bootstrap-logo.png" alt="">
-                                <h1 class="texto__opciones">Boostrap</h1>
+                            <div class="col-sm-4 col-xs-12 mt-4">
+                                <div class="cat__pop--opciones color6">
+                                <img class="cat__pop--logos" src="assests/img/logos/bootstrap-logo.png" alt="">
+                                <h1 class="cat__pop--text">Boostrap</h1>
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <h1 class="cte">Ver todas las categorías > </h1>
+                            <div class="col-sm-4 col-xs-12 mt-5">
+                                <div class="cte">
+                                    <h1 class="cte__titulo">Ver todas las categorías > </h1>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -173,15 +177,14 @@
     </div>
     
     </main>
-    <div class="container">
+    
         <hr class="linea">
-    </div>
+    
     <footer class="footer">
-        <div class="container">
-        <img src="assests/img/logos/adl.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Blog FrontEnd
-              </a>
-       <span>Desafio Latam</span>
+        <div class="footer__opciones container">
+        <img class="footer__opciones--imagen" src="assests/img/logos/adl.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <h1 class="footer__opciones--titulo">Blog FrontEnd</h1> 
+            <span class="footer__opciones--span">Desafio Latam -2022</span>
     </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

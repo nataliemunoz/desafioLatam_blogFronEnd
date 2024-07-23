@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: ;
+    /* grid-template rows:40px 40px auto 60px 60px 40px; */
+
+}
+header{
+    padding: 25px;
+    display: flex;
+    justify-content: start;
+}
+.img__logo--principal{
+    height: 5vh;
+    width: 5vh;
+}
+.text__titulo--1{
+    font-size: 20px;
+}
