@@ -1,0 +1,99 @@
+.pop{
+
+    &__titulo1{
+      text-align: left;
+    }
+    &__titulo2{
+      text-align: right;
+    }
+    &__titulo{
+    text-align: center;
+    padding-right: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+    &__imagenPrincipal{
+        height: 50%;
+        width: 100%;
+        border-radius: 15px;
+    }
+    &__imagenPrincipal2{
+        height: 20vh;
+        width: 18vw;
+        border-radius: 15px;
+    }
+    &__imagenPrincipal3{
+      height: 10vw;
+      width: 16vw;
+      border-radius: 15px;
+  }
+    &__fecha{
+        text-align: start;
+    }
+    &__titulo2{
+        text-align: start;
+    }
+    &__logo{
+        width: 3vw;
+        border-radius: 30px;
+     
+    }
+    &__logo-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      
+    &__logo {
+        margin-right: 10px;
+      }
+}
+
+.pop2{
+     
+
+      &__item1{
+        background: $colorHtml; 
+        color: $color6;
+      }
+      &__item2{
+        background: $colorJs; 
+        color: $color6;
+      }
+      &__item3{
+        background: $colorCss;
+        color: $color6; 
+      }
+      &__item4{
+        background: $colorReact; 
+        color: $color6;
+      }
+      &__item5{
+        background: $colorVue; 
+        color: $color6;
+      }
+      &__item6{
+        background: $colorBoot; 
+        color: $color6;
+      }
+      &__imagenes{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      & p{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+      }
+      &__categorias{
+        text-align: start;
+      }
+}
+.item{
+    width: 350px;
+    border-radius: 10px;
+    
+}
+

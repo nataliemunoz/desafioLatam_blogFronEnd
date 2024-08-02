@@ -1,0 +1,49 @@
+// .col-4 {
+//     p, h2, span {
+//         margin-left: 15%;
+//         text-align: left;
+//     }
+//   }
+
+.post{
+    &__principal{
+        text-align: start;
+    } 
+    &__parrafo2{
+        align-items: start;
+    }
+    &__option{
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    &__img{
+        height: 25vh;
+        width: 100%;
+        border-radius: 12px;
+    }
+    &__parrafo{
+        text-align: left;
+    }
+    &__subtitle{
+        text-align: left;        
+    }
+    &__logo{
+        position: absolute;
+        width: 2vw;
+        border-radius: 20px;
+        bottom: 0;
+    }
+    &__logo2{
+        width: 2vw;
+        border-radius: 20px;
+    }
+    &__leyenda{
+        position: absolute;
+        bottom: 5px;
+        left: 60px;
+    }
+}

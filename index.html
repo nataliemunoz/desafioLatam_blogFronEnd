@@ -1,192 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog Front End</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Cdn boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Google Font Poppins  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assests/css/styles.css">
+    <!-- Css Propia -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Blog Fron End</title>
 </head>
-  <body>
-    <header class="header">
-        <div class="header__container container">
-            <img class="header__container--imagen" src="assests/img/logos/adl.png" alt="Logo">
-            <H1 class="header__container--titulo1">Blog FrontEnd</H1>
-        </div>
-    </header>
+<body>
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <img class="logo me-2" src="assets/img/logos/adl.png" alt="Bootstrap" width="30" height="24">
+            <a class="navbar-brand font-family-poppins" href="#">Blog FronEnd</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="post.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Iniciar sesión</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <div>
+        <hr class="lineaAcoplado">
+    </div>
     <main>
-    <hr class="linea">
-    <div class="nov__izquierda container">
-    <h1 class="nov__izquierda--titulo2">Novedades</h1>
-        <div class="container text-left">
+        <div class="container text-center">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
             <div class="row">
-                <div class="col-sm-8 col-xs-12">
-                    <div class="etiqueta">
-                        <img class="nov__izquierda--img" src="assests/img/posts/bootstrap.png" >
-                        <div class="body">
-                            <h6 class="nov__izquierda--title mt-4">24 de noviembre, 2022</h6>
-                            <p class="nov__izquierda--p">Modifica el tema de bootstrap con variables CSS</p>
-                           <img class="nov__izquierda--adl" src="assests/img/logos/adl.png" alt="">
-                            <span class="nov__izquierda--span">Desafía Latam</span> 
-                        </div>
+              <div class="col-md-8 col-sm-12">
+                <h1 class="nov__titulo">Novedades</h1>
+                <img class="nov__imagenPrincipal" src="assets/img/posts/bootstrap.png" alt="">
+                <p class="nov__fecha">24 Noviembre, 2022</p>
+                <h2 class="nov__titulo2">Modifica el tema de Bootstrapp con variables CSS</h2>
+                <div class="nov__logo-container">
+                    <img class="nov__logo" src="assets/img/logos/adl.png">
+                    <p>Desafío Latam</p>
+                </div>        
+              </div>
+              <div class="col-md-4 col-sm-12 nov2 mt-5">
+                <div class="row row-2 nov2__filas">
+                    <div class="col mt-2">
+                        <img class="nov2__imagenes" src="assets/img/posts/Herencia-JS.png" alt="">
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-xs-12">
-                                <div class="nov__derecha">
-                                    <img class="nov__derecha--img" src="assests/img/posts/Herencia-JS.png" alt="">
-                                    <div class="body">
-                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
-                                    <p class="nov__derecha--p">Herencia en JavaScript</p>
-                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="nov__derecha--span">Desafía Latam</span>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-xs-12 mt-5">
-                                <div class="nov__derecha">
-                                    <img class="nov__derecha--img" src="assests/img/posts/Etiquetas-semánticas-HTML.png" alt="">
-                                    <div class="body">
-                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
-                                    <p class="nov__derecha--p">Etiquetas Semánticas</p>
-                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="nov__derecha--span">Desafía Latam</span>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-xs-12 mt-5">
-                                <div class="nov__derecha">
-                                    <img class="nov__derecha--img" src="assests/img/posts/reactComponents.png" alt="">
-                                    <div class="body">
-                                    <h6 class="nov__derecha--titulo3">24 de noviembre, 2022</h6>
-                                    <p class="nov__derecha--p">Companentes React</p>
-                                    <img class="nov__derecha--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="nov__derecha--span">Desafía Latam</span>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
+                    <div class="col mt-2">
+                        <p class="nov2__fecha">24 Noviembre, 2022</p>
+                        <h6 class="nov2__titulo">Herencia en JavaScript</h6>
+                        <div class="nov2__logo-container">
+                            <img class="nov2__logo" src="assets/img/logos/adl.png">
+                            <p>Desafío Latam</p>
+                        </div> 
                     </div>
+               </div> 
+               <div class="row row-2 nov2__filas">
+                <div class="col">
+                    <img class="nov2__imagenes mt-4" src="assets/img/posts/Etiquetas-semánticas-HTML.png" alt="">
                 </div>
+                <div class="col mt-4">
+                    <p class="nov2__fecha">24 Noviembre, 2022</p>
+                    <h6 class="nov2__titulo">Etiquetas semánticas</h6>
+                    <div class="nov2__logo-container">
+                        <img class="nov2__logo" src="assets/img/logos/adl.png">
+                        <p>Desafío Latam</p>
+                    </div> 
+                </div>
+           </div>                   
+           <div class="row row-2 nov2__filas">
+            <div class="col">
+                <img class="nov2__imagenes mt-4" src="assets/img/posts/reactComponents.png" alt="">
             </div>
-        
-            <hr class="linea mt-5">
-        
-            <div class="row mt-5">
-                <div class="col-sm-8">
-                    <div class="container">
-                        <h1 class="pop__cat--titulos">Populares</h1>
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-12 mt-5 mx-5">
-                                <div class="pop__cat">
-                                    <img class="pop__cat--img" src="assests/img/posts/vue-components.png" alt="">
-                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
-                                    <p class="pop__cat--p">Componentes VUE</p>
-                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="pop__cat--span">Desafía Latam</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
-                                <div class="pop__cat">
-                                    <img class="pop__cat--img" src="assests/img/posts/api-js.png" alt="">
-                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
-                                    <p class="pop__cat--p">Componentes VUE</p>
-                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="pop__cat--span">Desafía Latam</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
-                                <div class="etiqueta--3">
-                                    <img class="pop__cat--img" src="assests/img/posts/sass.jpg" alt="">
-                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
-                                    <p class="pop__cat--p">Componentes VUE</p>
-                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="pop__cat--span">Desafía Latam</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 ml-2 mt-5 mx-5">
-                                <div class="pop__cat">
-                                    <img class="pop__cat--img" src="assests/img/posts/bootstrap.png" alt="">
-                                    <h6 class="pop__cat--titulos4">24 de noviembre, 2022</h6>
-                                    <p class="pop__cat--p">Componentes VUE</p>
-                                    <img class="pop__cat--adl1" src="assests/img/logos/adl.png" alt="">
-                                    <span class="pop__cat--span">Desafía Latam</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="container">
-                        <h1 class="pop__cat--titulos">Categorías</h1>
-                        <div class="mt-5">
-                            <div class="col-sm-4 col-xs-12 ">
-                                <div class="cat__pop--opciones color1">
-                                <img class="cat__pop--logos" src="assests/img/logos/html.png" alt="">
-                                <h1 class="cat__pop--text">HTML</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-4">
-                                <div class="cat__pop--opciones color2">
-                                <img class="cat__pop--logos" src="assests/img/logos/js.png" alt="">
-                                <h1 class="cat__pop--text">JavaScript</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-4">
-                                <div class="cat__pop--opciones color3">
-                                <img class="cat__pop--logos" src="assests/img/logos/css.png" alt="">
-                                <h1 class="cat__pop--text">Css</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-4">
-                                <div class="cat__pop--opciones color4">
-                                <img class="cat__pop--logos" src="assests/img/logos/react.png" alt="">
-                                <h1 class="cat__pop--text">React</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-4">
-                                <div class="cat__pop--opciones color5">
-                                <img class="cat__pop--logos" src="assests/img/logos/vue.png" alt="">
-                                <h1 class="cat__pop--text">Vue</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-4">
-                                <div class="cat__pop--opciones color6">
-                                <img class="cat__pop--logos" src="assests/img/logos/bootstrap-logo.png" alt="">
-                                <h1 class="cat__pop--text">Boostrap</h1>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 mt-5">
-                                <div class="cte">
-                                    <h1 class="cte__titulo">Ver todas las categorías > </h1>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col mt-4">
+                <p class="nov2__fecha">24 Noviembre, 2022</p>
+                <h6 class="nov2__titulo">Componentes React</h6>
+                <div class="nov2__logo-container">
+                    <img class="nov2__logo" src="assets/img/logos/adl.png">
+                    <p>Desafío Latam</p>
+                </div> 
             </div>
-        </div>
-        
+       </div> 
     </div>
-    
     </main>
-    
-        <hr class="linea">
-    
-    <footer class="footer">
-        <div class="footer__opciones container">
-        <img class="footer__opciones--imagen" src="assests/img/logos/adl.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            <h1 class="footer__opciones--titulo">Blog FrontEnd</h1> 
-            <span class="footer__opciones--span">Desafio Latam -2022</span>
+
+    <div>
+        <hr class="lineaAcoplado mt-5">
     </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <h1 class="poppins-regular pop__titulo">Novedades</h1>
+          <br>
+          <br>
+          <div class="item mt-5">
+            <img class="pop__imagenPrincipal " src="assets/img/posts/vue-components.png" alt="">
+            <p class="pop__fecha">24 Noviembre, 2022</p>
+            <h2 class="pop__titulo2">Componentes Vue</h2>
+            <div class="pop__logo-container">
+                <img class="pop__logo" src="assets/img/logos/adl.png">
+                <p>Desafío Latam</p>
+            </div>    
+          </div>
+          <div class="item mt-5">
+            <img class="pop__imagenPrincipal" src="assets/img/posts/sass.jpg" alt="">
+            <p class="pop__fecha">24 Noviembre, 2022</p>
+            <h2 class="pop__titulo2">CSS reutilizable con Sass</h2>
+            <div class="pop__logo-container">
+                <img class="pop__logo" src="assets/img/logos/adl.png">
+                <p>Desafío Latam</p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h1></h1>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="item mt-5">
+            <img class="pop__imagenPrincipal3" src="assets/img/posts/api-js.png" alt="">
+            <p class="pop__fecha">24 Noviembre, 2022</p>
+            <h2 class="pop__titulo2">Consumo de API con JavaScript</h2>
+            <div class="pop__logo-container">
+                <img class="pop__logo" src="assets/img/logos/adl.png">
+                <p>Desafío Latam</p>
+            </div>   
+          </div>
+          <div class="item mt-5">
+            <img class="pop__imagenPrincipal2" src="assets/img/posts/bootstrap.png" alt="">
+            <p class="pop__fecha">24 Noviembre, 2022</p>
+            <h2 class="pop__titulo2">Componentes bootstrap</h2>
+            <div class="pop__logo-container">
+                <img class="pop__logo" src="assets/img/logos/adl.png">
+                <p>Desafío Latam</p>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h1>Categorías</h1>
+          <br>
+          <br>
+          <div class="item pop2__item1 mt-3">
+            <img class="pop2__imagenes" src="assets/img/logos/html.png" alt="">
+            <p>HTML</p>
+          </div>
+          <div class="item pop2__item2"> 
+            <img class="pop2__imagenes" src="assets/img/logos/js.png" alt="">
+            <p>JavaScript</p>
+          </div>
+          <div class="item pop2__item3"> 
+            <img class="pop2__imagenes" src="assets/img/logos/css.png" alt="">
+            <p>CSS</p>
+          </div>
+          <div class="item pop2__item4">
+            <img class="pop2__imagenes" src="assets/img/logos/react.png" alt="">
+            <p>React</p>
+          </div>
+          <div class="item pop2__item5">
+            <img class="pop2__imagenes" src="assets/img/logos/vue.png" alt="">
+            <p>Vue</p>
+          </div>
+          <div class="item pop2__item6">
+            <img class="pop2__imagenes" src="assets/img/logos/bootstrap-logo.png" alt="">
+            <p>Bootstrap</p>
+          </div>
+          <div class="item item10">
+            <p>ver todas las categorías ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+      <hr class="lineaAcoplado mt-5">
+    </div>
+    <footer>
+      <div class="container">
+        <img class="logo" src="assets/img/logos/adl.png">
+        <p class="tituloPrincipal font-family-poppins"> Blog FrontEnd </p>
+        <p class="comentarioPieDePagina"> Desafio Latam - 2023 </p>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

@@ -1,0 +1,33 @@
+/* abstracts */
+@import 'abstracts/variables';
+
+/* base */
+@import 'base/reset';
+@import 'base/typography';
+@import 'vendors/poppins';
+
+/* components */
+@import 'components/novedades';
+@import 'components/populares';
+@import 'components/buttons';
+@import 'components/inputs';
+@import 'components/subscripcion';
+
+/* layout */
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/headers';
+
+/* pages */
+@import 'pages/index';
+@import 'pages/registro';
+@import 'pages/post';
+
+/* themes */
+
+@import 'themes/individualColors';
+@import 'themes/individualSizes';
+@import 'themes/individualTypography';
+
+/* vendors */
+@import 'vendors/poppins';
